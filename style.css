@@ -1,11 +1,11 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 body{
 margin: 0;
-overflow: hidden;
+
 }
 
-.squares{
+.parent_square{
 width: 1200px;
 height: 1200px ;
 border: 1px solid black;

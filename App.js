@@ -15,10 +15,10 @@ button.addEventListener("click", function () {
 
 
 function creategrid(n) {
-    const squares = document.getElementById("squares");
-    const squares_width = squares.offsetWidth;
-    const squares_height = squares.offsetHeight;
-    squares.innerText = '';
+    const parent_square = document.getElementById("parent_square");
+    const parent_square_width = parent_square.offsetWidth;
+    const parent_square_height = parent_square.offsetHeight;
+    parent_square.innerText = '';
     for (let i = 0; i < n; i++) {   
         const row = document.createElement("div");
         row.classList.add("row");
@@ -26,11 +26,11 @@ function creategrid(n) {
             const cell = document.createElement("div");
             cell.classList.add("cell");
 
-            cell.style.width = `${squares_width / n}px`;
-            cell.style.height = `${squares_height / n}px`;
+            cell.style.width = `${parent_square_width / n}px`;
+            cell.style.height = `${parent_square_height / n}px`;
             row.appendChild(cell);
         }
-        squares.appendChild(row);
+        parent_square.appendChild(row);
     }
 
     const cells = document.getElementsByClassName("cell");
