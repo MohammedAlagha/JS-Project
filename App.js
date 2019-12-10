@@ -38,7 +38,7 @@ function creategrid(n) {
     for (let cell of cells) {
         cell.addEventListener("mouseover", () => {
             cell.style.backgroundColor = `rgb(${random(256)},${random(256)},${random(256)})`;
-            console.log(cell.style.backgroundColor);
+            //console.log(cell.style.backgroundColor);
         })
     }
 
